@@ -21,7 +21,9 @@ export const metadata = {
     'limousine service Saskatchewan', 'Cloud Nine Coaches',
   ],
   robots: 'index, follow',
-}
+};
+
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 
 
@@ -39,8 +41,10 @@ export default function RootLayout({ children }) {
         <Navbar />
 
         {/* Background image as watermark */}
-        <div className="absolute inset-0 -z-10 bg-[url('/CNCBanner.jpg')] bg-cover bg-[0%_20%] opacity-20 mix-blend-multiply" />
-
+         <div
+  className="absolute inset-0 -z-10 bg-cover bg-[0%_20%] opacity-20 mix-blend-multiply"
+  style={{ backgroundImage: `url('${prefix}/CNCBanner.jpg')` }}
+/>
         {/* Content */}
         <main className="flex-grow absolute top-[13vh] bottom-[6.5vh] left-0 right-0 overflow-y-auto">
           {children}
