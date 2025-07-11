@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <div className="w-full max-w-screen-xl mx-auto px-4 py-10 text-center space-y-10">
@@ -7,15 +9,14 @@ export default function Home() {
         <p className="text-xl max-w-3xl mx-auto mb-6">
           Luxury stretch limousine service based in Yorkton, Saskatchewan. Perfect for weddings, graduations, special occasions, airport transfers and more — at just $200 +GST per hour from our depot in Yorkton.
         </p>
-        <a
-          href="/contact"
-          className="inline-block bg-black/90 text-white py-3 px-6 rounded hover:bg-[#c4bc91] hover:text-white transition"
-        >
-          Book Your Ride
-        </a>
+        <Link href="/contact" legacyBehavior>
+          <a
+            className="inline-block bg-black/90 text-white py-3 px-6 rounded hover:bg-[#c4bc91] hover:text-white transition"
+          >
+            Book Your Ride
+          </a>
+        </Link>
       </section>
-
-
 
       {/* Testimonials / Event Mentions */}
       <section className="text-left max-w-4xl mx-auto space-y-4">
@@ -34,12 +35,13 @@ export default function Home() {
       <section className="bg-black/90 text-white p-6 rounded shadow max-w-4xl mx-auto text-center">
         <h2 className="text-2xl font-bold mb-2">Ready to Ride?</h2>
         <p className="mb-4">Call or text <strong>(306) 641-4724</strong> or <strong>(306) 620-9718</strong> to reserve your luxury limo today.</p>
-        <a
-          href="/contact"
-          className="inline-block bg-white text-black font-semibold py-2 px-5 rounded hover:bg-[#c4bc91] hover:text-white transition"
-        >
-          Get in Touch
-        </a>
+        <Link href="/contact" legacyBehavior>
+          <a
+            className="inline-block bg-white text-black font-semibold py-2 px-5 rounded hover:bg-[#c4bc91] hover:text-white transition"
+          >
+            Get in Touch
+          </a>
+        </Link>
       </section>
 
       {/* SEO helper (invisible) */}

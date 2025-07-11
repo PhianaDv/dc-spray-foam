@@ -2,11 +2,12 @@
   "name": "cloud-nine-coaches",
   "version": "0.1.0",
   "private": true,
- "scripts": {
+"scripts": {
   "dev": "next dev",
   "build": "next build",
+  "clean": "rd /s /q .next; rd /s /q out",
   "postexport": "echo > out/.nojekyll",
-  "deploy": "npm run build && npm run export && npm run postexport && gh-pages -d out"
+  "deploy": "npm run build && npm run postexport && gh-pages -d out --dotfiles"
 },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
