@@ -1,10 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export',
-  images: {
-    unoptimized: true,
-  },
-  basePath: '/cloud-nine-coaches', 
+    output: 'export', // static export
+  basePath: '/cloud-nine-coaches',
+  assetPrefix: '/cloud-nine-coaches/',
 };
 
 export default nextConfig;
