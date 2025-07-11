@@ -44,7 +44,7 @@ export default function Gallery() {
 
     window.addEventListener('keydown', handleKey);
     return () => window.removeEventListener('keydown', handleKey);
-  }, [selectedIndex]);
+  }, [selectedIndex, items.length]);
 
   return (
     <section className="p-4 md:p-8 max-w-screen-xl mx-auto">

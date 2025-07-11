@@ -19,12 +19,12 @@ export default function Home() {
 
       {/* Testimonials / Event Mentions */}
       <section className="text-left max-w-4xl mx-auto space-y-4">
-        <h2 className="text-2xl font-semibold">What We've Been Up To</h2>
+        <h2 className="text-2xl font-semibold">What We&apos;ve Been Up To</h2>
         <ul className="list-disc pl-6 text-left">
           <li>🎄 CP Holiday Train event — Thanks to Tourism Yorkton and Randy Goulden for including us!</li>
           <li>🎉 Yorkton Parade was a hit — thank you to everyone who turned out!</li>
-          <li>🍷 Bottle night? We’ll pick you up from <strong>Let's Make Wine Yorkton</strong> in style.</li>
-          <li>💃 Girls night out or your next birthday? Call or text <strong>(306) 641-4724</strong> and we’ll handle the ride!</li>
+          <li>🍷 Bottle night? We&apos;ll pick you up from <strong>Let&apos;s Make Wine Yorkton</strong> in style.</li>
+          <li>💃 Girls night out or your next birthday? Call or text <strong>(306) 641-4724</strong> and we&apos;ll handle the ride!</li>
           <li>🛹 Supported local events like Go Skateboarding Day — we love our community!</li>
           <li>🎉 Community got to visit our 14-passenger Ford Excursion stretch limousine inside Flexi Hall at the show on April 6th, 2025!</li>
         </ul>
