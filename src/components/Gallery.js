@@ -1,27 +1,29 @@
-'use client'
+'use client';
 
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 export default function Gallery() {
   const items = [
-    { type: 'image', src: '/gallery/CNC1.jpg', alt: 'Limo side view' },
-    { type: 'image', src: '/gallery/CNC2.jpg', alt: 'Luxury Interior' },
-    { type: 'image', src: '/gallery/CNC4.jpg', alt: 'Cloud Nine Coaches at Yorkton Parade' },
-    { type: 'image', src: '/gallery/CNC7.jpg', alt: 'Special Occasion' },
+    { type: 'image', src: `${prefix}/CNC1.jpg`, alt: 'Limo side view' },
+    { type: 'image', src: `${prefix}/CNC2.jpg`, alt: 'Luxury Interior' },
+    { type: 'image', src: `${prefix}/CNC4.jpg`, alt: 'Cloud Nine Coaches at Yorkton Parade' },
+    { type: 'image', src: `${prefix}/CNC7.jpg`, alt: 'Special Occasion' },
     {
       type: 'facebook',
       src: 'https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F946402410522543%2F&show_text=false&width=267&t=0',
       alt: 'Facebook Reel',
-      thumbnail: '/gallery/CNCthumbnail.jpg',
+      thumbnail: `${prefix}/CNCthumbnail.jpg`,
     },
-    { type: 'image', src: '/gallery/CNC3.jpg', alt: 'Driver Opening Door' },
-    { type: 'image', src: '/gallery/CNC6.jpg', alt: 'Birthday bunch' },
-    { type: 'image', src: '/gallery/CNC8.jpg', alt: "Mother's Day" },
-    { type: 'image', src: '/CNCBanner.jpg', alt: "Wedding" },
-    { type: 'image', src: '/gallery/CNC9.jpg', alt: "Let's make wine!" },
-    { type: 'image', src: '/gallery/CNC5.jpg', alt: "Girl's night out" },
+    { type: 'image', src: `${prefix}/CNC3.jpg`, alt: 'Driver Opening Door' },
+    { type: 'image', src: `${prefix}/CNC6.jpg`, alt: 'Birthday bunch' },
+    { type: 'image', src: `${prefix}/CNC8.jpg`, alt: "Mother's Day" },
+    { type: 'image', src: `${prefix}/CNCBanner.jpg`, alt: "Wedding" },
+    { type: 'image', src: `${prefix}/CNC9.jpg`, alt: "Let's make wine!" },
+    { type: 'image', src: `${prefix}/CNC5.jpg`, alt: "Girl's night out" },
   ];
 
   const [selectedIndex, setSelectedIndex] = useState(null);
@@ -107,7 +109,7 @@ export default function Gallery() {
             {/* Arrows */}
             {selectedIndex > 0 && (
               <button
-                className="absolute left-2 md:left-[-3rem] top-1/2 -translate-y-1/2 bg-white text-black w-10 h-10 rounded-full shadow-lg flex items-center justify-center hover:bg-gray-200 z-10"
+                className="absolute cursor-pointer left-2 md:left-[-3rem] top-1/2 -translate-y-1/2 bg-white text-black w-10 h-10 rounded-full shadow-lg flex items-center justify-center hover:bg-gray-200 z-10"
                 onClick={() => setSelectedIndex((prev) => prev - 1)}
               >
                 <ChevronLeft className="w-6 h-6" />
@@ -116,14 +118,14 @@ export default function Gallery() {
 
             {selectedIndex < items.length - 1 && (
               <button
-                className="absolute right-2 md:right-[-3rem] top-1/2 -translate-y-1/2 bg-white text-black w-10 h-10 rounded-full shadow-lg flex items-center justify-center hover:bg-gray-200 z-10"
+                className="absolute cursor-pointer right-2 md:right-[-3rem] top-1/2 -translate-y-1/2 bg-white text-black w-10 h-10 rounded-full shadow-lg flex items-center justify-center hover:bg-gray-200 z-10"
                 onClick={() => setSelectedIndex((prev) => prev + 1)}
               >
                 <ChevronRight className="w-6 h-6" />
               </button>
             )}
 
-            {/* Media container with close button */}
+            {/* Media container */}
             <div className="relative">
               <button
                 className="fixed cursor-pointer top-2 right-2 bg-black bg-opacity-60 text-white w-8 h-8 rounded-full flex items-center justify-center z-20 hover:bg-opacity-90"
