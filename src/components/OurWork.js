@@ -45,7 +45,7 @@ export default function OurWork() {
   }, [selectedIndex, items.length]);
 
   return (
-    <section className="p-4 md:p-8 max-w-screen-xl mx-auto">
+    <section className="p-12 md:p-12 max-w-screen-xl mx-auto">
       <h2 className="text-2xl md:text-4xl font-semibold text-center mb-6">See what we&apos;ve done</h2>
 
       <div className="columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4">

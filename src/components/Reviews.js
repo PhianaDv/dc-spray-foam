@@ -37,7 +37,7 @@ export default function Reviews() {
   const next = () => setIndex((prev) => (prev + 1) % reviews.length)
 
   return (
-    <section className="max-w-screen-md mx-auto p-6 text-center">
+    <section className="max-w-screen-md p-12 text-center mx-auto">
       <h2 className="text-2xl md:text-4xl font-semibold mb-6">What Our Customers Say</h2>
 
       <div className="relative bg-white shadow-xl rounded-xl px-6 py-10 min-h-[180px]">
