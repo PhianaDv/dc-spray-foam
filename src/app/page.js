@@ -23,15 +23,19 @@ export default function Home() {
 
       {/* Services / Project Highlights */}
       <section className="text-left max-w-4xl mx-auto space-y-4 text-[#03072b]">
-        <h2 className="text-2xl font-semibold">Looking for insulation? We&apos;ve got you covered - Commericial, agricultural and residential buildings!</h2>
+        <h2 className="text-2xl font-semibold">Looking for insulation? We&apos;ve got you covered.</h2>
         
         <ul className="list-disc pl-6 text-left">
           <li>Roofing</li>
-          <li>Attics</li>
           <li>Walls</li>
+          <li>Crawl Spaces</li>
           <li>Basements</li>
-          <li>Trusted by farmers, contractors, and families throughout North Dakota.</li>
+          <li>Attics</li>
+          <li>Fish Houses, Hunting Shacks and Trailers.</li>
+          
         </ul>
+        <p className="text-2xl font-semibold">Agricultural, Residential and Commercial Buildings!</p>
+        <p><strong>Trusted by farmers, contractors, and families throughout North Dakota.</strong></p>
       </section>
 
       {/* Contact CTA */}
