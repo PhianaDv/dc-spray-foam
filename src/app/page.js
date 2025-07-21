@@ -10,7 +10,7 @@ export default function Home() {
   <Logo className="h-[100px]" />
 </div>
         <p className="text-xl max-w-3xl mx-auto mb-6 text-[#03072b]">
-          Professional spray foam insulation located in Oakes, North Dakota, serving all of North Dakota. We help homeowners, farmers, and businesses stay energy-efficient and protected — year-round.
+          Professional spray foam insulation located in Oakes, North Dakota - serving all of North Dakota. We help homeowners, farmers, and businesses stay energy-efficient and protected — year-round.
         </p>
         <Link href="/contact" legacyBehavior>
           <a
@@ -23,14 +23,14 @@ export default function Home() {
 
       {/* Services / Project Highlights */}
       <section className="text-left max-w-4xl mx-auto space-y-4 text-[#03072b]">
-        <h2 className="text-2xl font-semibold">Looking for insulation? We&apos;ve got you covered.</h2>
+        <h2 className="text-2xl font-semibold">Looking for insulation? We&apos;ve got you covered - Commericial, agricultural and residential buildings!</h2>
+        
         <ul className="list-disc pl-6 text-left">
           <li>Roofing</li>
-          <li>Residential attics, basements, and walls</li>
-          <li>Commercial and agricultural buildings</li>
-          <li>Barns and pole sheds</li>
+          <li>Attics</li>
+          <li>Walls</li>
+          <li>Basements</li>
           <li>Trusted by farmers, contractors, and families throughout North Dakota.</li>
-          <li>Based in Oakes, ND — serving all of North Dakota.</li>
         </ul>
       </section>
 
@@ -44,7 +44,7 @@ export default function Home() {
        
          
         <p className="mb-4">
-          Call or text <strong>(701) 308-2004</strong> or <strong>(701) 936-9935</strong> for a free estimate.
+          Call or text <strong>(701) 308-2004</strong> or <strong>(701) 936-9935</strong> for a free estimate. No job is too big, or too small!
         </p>
         <Link href="/contact" legacyBehavior>
           <a
