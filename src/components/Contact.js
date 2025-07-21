@@ -36,7 +36,7 @@ export default function Contact() {
   }
 
   return (
-    <section className="w-full max-w-screen-md mx-auto px-4 py-10 text-center space-y-6 text-[#03072b]">
+    <section className="w-full max-w-screen-md mx-auto px-4 py-10 text-center text-[#03072b]">
       <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
 
       {/* Phone Contact Section */}

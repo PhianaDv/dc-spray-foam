@@ -1,13 +1,16 @@
+import Logo from '@/components/Logo';
 import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="w-full max-w-screen-xl mx-auto px-4 py-10 text-center space-y-10">
+    <div className="w-full max-w-screen-xl mx-auto px-4 py-6 text-center space-y-10">
       {/* Hero Section */}
       <section>
-        <h1 className="text-5xl text-[#03072b] font-bold mb-4">DC SPRAY FOAM</h1>
+       <div className="flex justify-center items-center">
+  <Logo className="h-[100px]" />
+</div>
         <p className="text-xl max-w-3xl mx-auto mb-6 text-[#03072b]">
-          Professional spray foam insulation serving Oakes, North Dakota and surrounding areas. We help homeowners, farmers, and businesses stay energy-efficient and protected — year-round.
+          Professional spray foam insulation located in Oakes, North Dakota, serving all of North Dakota. We help homeowners, farmers, and businesses stay energy-efficient and protected — year-round.
         </p>
         <Link href="/contact" legacyBehavior>
           <a
@@ -22,12 +25,12 @@ export default function Home() {
       <section className="text-left max-w-4xl mx-auto space-y-4 text-[#03072b]">
         <h2 className="text-2xl font-semibold">Looking for insulation? We&apos;ve got you covered.</h2>
         <ul className="list-disc pl-6 text-left">
+          <li>Roofing</li>
           <li>Residential attics, basements, and walls</li>
           <li>Commercial and agricultural buildings</li>
           <li>Barns and pole sheds</li>
-          <li>Spray foam trailers</li>
-          <li>Trusted by farms, contractors, and families throughout rural North Dakota.</li>
-          <li>Based in Oakes, ND — serving Ellendale, Jamestown, Valley City, Lisbon, Edgeley, Wahpeton, Fargo and beyond.</li>
+          <li>Trusted by farmers, contractors, and families throughout rural North Dakota.</li>
+          <li>Based in Oakes, ND — serving all of North Dakota.</li>
         </ul>
       </section>
 
@@ -36,7 +39,7 @@ export default function Home() {
         <h2 className="text-2xl font-bold mb-2">Sealed tight, done right.</h2>
         
           <li>Open and Closed Cell</li>
-          <li>Blow In</li>
+          <li>Blow-in</li>
           <li>Roof applications and Coatings</li>
        
          
@@ -53,9 +56,20 @@ export default function Home() {
       </section>
 
       {/* SEO helper (invisible) */}
-      <div className="sr-only">
-        Providing professional spray foam insulation in Oakes, North Dakota and surrounds including: Jamestown, Valley City, Wahpeton, Lisbon, Edgeley, Ellendale, Fargo and nearby rural communities. Ideal for residential, commercial, farm, and new construction projects. Reduce heating and cooling costs, increase comfort, and protect your investment with DC Spray Foam.
-      </div>
+      <section class="sr-only">
+  <h2>Service Areas – Eastern North Dakota</h2>
+  <p>Fargo, Grand Forks, Wahpeton, Valley City, Jamestown, Casselton, Lisbon, Hillsboro, Mayville, Larimore, Kindred, Enderlin, Grafton, Park River, Cavalier, Pembina, Thompson, Hatton, Buxton, Harwood, Horace, and surrounding communities.</p>
+
+  <h2>Service Areas – Central North Dakota</h2>
+  <p>Bismarck, Mandan, Devils Lake, Carrington, Harvey, Steele, Rugby, Fort Yates, Beulah, Hazen, Washburn, Lincoln, Center, Wilton, New Rockford, Turtle Lake, Garrison, Napoleon, Robinson, and surrounding communities.</p>
+
+  <h2>Service Areas – Western North Dakota</h2>
+  <p>Dickinson, Williston, Minot, Watford City, Bowman, Stanley, Tioga, Belfield, Beach, Killdeer, New Town, Parshall, Kenmare, Mohall, Velva, Surrey, Glenburn, Alexander, Alamo, and surrounding communities.</p>
+
+  <h2>Service Areas – Southern North Dakota (Based in Oakes)</h2>
+  <p>Oakes, Ellendale, Edgeley, LaMoure, Ashley, Forman, Linton, Kulm, Wishek, Napoleon, Gackle, Monango, Forbes, Venturia, and surrounding communities.</p>
+</section>
+
     </div>
   );
 }

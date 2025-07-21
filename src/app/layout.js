@@ -11,11 +11,10 @@ export const metadata = {
   description:
     'DC Spray Foam specializes in residential, commercial, and agricultural spray foam insulation across North Dakota. Increase energy efficiency and comfort with our expert team.',
   keywords: [
-    'spray foam insulation', 'North Dakota insulation', 'Oakes insulation', 'energy efficiency North Dakota',
-    'spray foam contractors', 'residential insulation ND', 'commercial insulation ND', 'agricultural insulation',
-    'basement insulation', 'attic insulation', 'pole barn insulation', 'garage insulation',
-    'spray foam Fargo', 'spray foam Bismarck', 'spray foam Jamestown', 'spray foam Valley City',
-    'DC Spray Foam', 'foam insulation company ND', 'insulation North Dakota',
+    'spray foam insulation', 'North Dakota insulation', 'Oakes insulation',
+    'spray foam Fargo', 'spray foam Bismarck', 'spray foam Grand Forks',
+    'spray foam Minot', 'spray foam Jamestown', 'spray foam Dickinson',
+    'spray foam Williston', 'foam insulation ND', 'insulation North Dakota'
   ],
   robots: 'index, follow',
   viewport: 'width=device-width, initial-scale=1',

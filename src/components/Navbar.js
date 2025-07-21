@@ -12,8 +12,8 @@ const pathname = rawPath.replace(/\/$/, '') || '/'
   const navItems = [
     { label: 'What We Do', href: '/' },
     { label: 'Our Work', href: '/ourwork' },
-    { label: 'Reviews', href: '/reviews' },
-    { label: 'Contact', href: '/contact' },
+    { label: 'Client Reviews', href: '/reviews' },
+    { label: 'Contact Us', href: '/contact' },
   ]
 
   return (
@@ -26,7 +26,7 @@ const pathname = rawPath.replace(/\/$/, '') || '/'
         </div>
 
         {/* Navigation Buttons */}
-        <div className="mt-2 md:mt-0 flex justify-center md:justify-end items-stretch h-full">
+        <div className="mt-2 md:mt-0 flex justify-center md:justify-end h-full text-center">
           {navItems.map((item, i) => {
             const isActive = pathname === item.href
 
