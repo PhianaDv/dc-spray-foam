@@ -29,7 +29,7 @@ export default function Home() {
           <li>Residential attics, basements, and walls</li>
           <li>Commercial and agricultural buildings</li>
           <li>Barns and pole sheds</li>
-          <li>Trusted by farmers, contractors, and families throughout rural North Dakota.</li>
+          <li>Trusted by farmers, contractors, and families throughout North Dakota.</li>
           <li>Based in Oakes, ND — serving all of North Dakota.</li>
         </ul>
       </section>
