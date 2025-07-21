@@ -6,24 +6,20 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
-export default function Gallery() {
+export default function OurWork() {
   const items = [
-    { type: 'image', src: `${prefix}/CNC1.jpg`, alt: 'Limo side view' },
-    { type: 'image', src: `${prefix}/CNC2.jpg`, alt: 'Luxury Interior' },
-    { type: 'image', src: `${prefix}/CNC4.jpg`, alt: 'Cloud Nine Coaches at Yorkton Parade' },
-    { type: 'image', src: `${prefix}/CNC7.jpg`, alt: 'Special Occasion' },
-    {
-      type: 'facebook',
-      src: 'https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F946402410522543%2F&show_text=false&width=267&t=0',
-      alt: 'Facebook Reel',
-      thumbnail: `${prefix}/CNCthumbnail.jpg`,
-    },
-    { type: 'image', src: `${prefix}/CNC3.jpg`, alt: 'Driver Opening Door' },
-    { type: 'image', src: `${prefix}/CNC6.jpg`, alt: 'Birthday bunch' },
-    { type: 'image', src: `${prefix}/CNC8.jpg`, alt: "Mother's Day" },
-    { type: 'image', src: `${prefix}/CNCBanner.jpg`, alt: "Wedding" },
-    { type: 'image', src: `${prefix}/CNC9.jpg`, alt: "Let's make wine!" },
-    { type: 'image', src: `${prefix}/CNC5.jpg`, alt: "Girl's night out" },
+    { type: 'image', src: `${prefix}/dc10.jpg`, alt: '10' },
+    { type: 'image', src: `${prefix}/dc11.jpg`, alt: '11' },
+    { type: 'image', src: `${prefix}/dc12.jpg`, alt: '12' },
+    { type: 'image', src: `${prefix}/dc1.jpg`, alt: '1' },
+    { type: 'image', src: `${prefix}/dc2.jpg`, alt: '2' },
+    { type: 'image', src: `${prefix}/dc3.jpg`, alt: '3' },
+    { type: 'image', src: `${prefix}/dc4.jpg`, alt: "4" },
+    { type: 'image', src: `${prefix}/dc5.jpg`, alt: "5" },
+    { type: 'image', src: `${prefix}/dc6.jpg`, alt: "6" },
+    { type: 'image', src: `${prefix}/dc7.jpg`, alt: "7" },
+    { type: 'image', src: `${prefix}/dc8.jpg`, alt: "8" },
+    { type: 'image', src: `${prefix}/dc9.jpg`, alt: "9" },
   ];
 
   const [selectedIndex, setSelectedIndex] = useState(null);
@@ -50,7 +46,7 @@ export default function Gallery() {
 
   return (
     <section className="p-4 md:p-8 max-w-screen-xl mx-auto">
-      <h2 className="text-2xl md:text-4xl font-semibold text-center mb-6">Gallery</h2>
+      <h2 className="text-2xl md:text-4xl font-semibold text-center mb-6">See what we've done</h2>
 
       <div className="columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4">
         {items.map((item, i) => (

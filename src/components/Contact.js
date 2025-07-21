@@ -36,35 +36,36 @@ export default function Contact() {
   }
 
   return (
-    <section className="w-full max-w-screen-md mx-auto px-4 py-10 text-center space-y-6">
+    <section className="w-full max-w-screen-md mx-auto px-4 py-10 text-center space-y-6 text-[#03072b]">
       <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
-      <p className="text-lg">
-        Ready to book your luxury ride or have a question? Call or text us today!
-      </p>
 
-      {/* Phone Link */}
-      <div className="space-y-2 text-xl font-semibold">
-        <a
-          href="tel:+13066414724"
-          className="block text-black/70 hover:underline"
-        >
-          📞 Call (306) 641-4724
-        </a>
-
-        <a
-          href="sms:+13066414724"
-          className="block text-black/70 hover:underline"
-        >
-          💬 Text (306) 641-4724
-        </a>
+      {/* Phone Contact Section */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-left">
+        {[
+          { number: '+17013082004', label: '(701) 308-2004' },
+          { number: '+17019369935', label: '(701) 936-9935' },
+        ].map((contact, idx) => (
+          <div key={idx} className="space-y-2 border border-gray-200 p-4 rounded-md">
+            <p className="font-semibold text-lg">{contact.label}</p>
+            <div className="flex gap-2 flex-wrap">
+              <a
+                href={`tel:${contact.number}`}
+                className="bg-[#03072b] text-[#d4d5d8] py-2 px-4 rounded hover:bg-[#d4d5d8] hover:text-[#03072b] transition"
+              >
+                📞 Call
+              </a>
+              <a
+                href={`sms:${contact.number}?&body=Please%20contact%20me%20about%20an%20insulation%20quote.`}
+                className="bg-[#03072b] text-[#d4d5d8] py-2 px-4 rounded hover:bg-[#d4d5d8] hover:text-[#03072b] transition"
+              >
+                💬 Text
+              </a>
+            </div>
+          </div>
+        ))}
       </div>
 
-      {/* Optional second number */}
-      <div className="text-sm text-black/70 mt-4">
-        You can also reach us at <strong>(306) 620-9718</strong> for event coordination.
-      </div>
-
-      <p className="text-sm text-black/50">Hwy 52 West, Yorkton, Saskatchewan</p>
+      <p className="text-sm">Oakes, ND, USA</p>
 
       {/* Contact Form */}
       <form
@@ -110,7 +111,7 @@ export default function Contact() {
             autoComplete="tel"
             required
             className="w-full border border-gray-300 rounded p-2 mt-1"
-            placeholder="(306) 123-4567"
+            placeholder="(701) 123-4567"
           />
         </label>
 
@@ -130,7 +131,7 @@ export default function Contact() {
         <button
           type="submit"
           disabled={loading}
-          className="bg-black/90 text-white py-2 px-6 rounded hover:bg-[#c4bc91] cursor-pointer transition disabled:opacity-50"
+          className="bg-[#03072b] text-[#d4d5d8] py-2 px-6 rounded hover:bg-[#d4d5d8] hover:text-[#03072b] transition disabled:opacity-50"
         >
           {loading ? 'Sending...' : 'Send Message'}
         </button>

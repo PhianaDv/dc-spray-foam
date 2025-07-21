@@ -1,7 +1,7 @@
 const nextConfig = {
   output: 'export',
-  basePath: '/cloud-nine-coaches',
-  assetPrefix: '/cloud-nine-coaches/',
+  basePath: '/dc-spray-foam',
+  assetPrefix: '/dc-spray-foam/',
   images: { unoptimized: true },
   trailingSlash: true,
 };
