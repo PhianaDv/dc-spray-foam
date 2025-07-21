@@ -32,11 +32,14 @@ export default function Home() {
       </section>
 
       {/* Contact CTA */}
-      <section className="bg-[#03072b] text-white p-6 rounded shadow max-w-4xl mx-auto text-center">
+      <section className="bg-[#03072b] text-white p-6 rounded shadow max-w-4xl mx-auto text-center list-inside">
         <h2 className="text-2xl font-bold mb-2">Sealed tight, done right.</h2>
-         <li>Open and Closed Cell</li>
+        
+          <li>Open and Closed Cell</li>
           <li>Blow In</li>
           <li>Roof applications and Coatings</li>
+       
+         
         <p className="mb-4">
           Call or text <strong>(701) 308-2004</strong> or <strong>(701) 936-9935</strong> for a free estimate.
         </p>
