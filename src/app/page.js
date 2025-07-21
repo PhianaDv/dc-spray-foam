@@ -48,7 +48,7 @@ export default function Home() {
        
          
         <p className="mb-4">
-          Call or text <strong>(701) 308-2004</strong> or <strong>(701) 936-9935</strong> for a free estimate. No job is too big, or too small!
+          Call or text <strong>(701) 308-2004</strong> or <strong>(701) 936-9935</strong> for a free estimate.
         </p>
         <Link href="/contact" legacyBehavior>
           <a
