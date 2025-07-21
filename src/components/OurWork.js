@@ -46,7 +46,7 @@ export default function OurWork() {
 
   return (
     <section className="p-12 md:p-12 max-w-screen-xl mx-auto">
-      <h2 className="text-2xl md:text-4xl font-semibold text-center mb-6">See what we&apos;ve done</h2>
+      <h2 className="text-2xl md:text-4xl font-semibold text-center mb-6">Some work we&apos;ve done</h2>
 
       <div className="columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4">
         {items.map((item, i) => (
