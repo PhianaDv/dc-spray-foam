@@ -4,22 +4,22 @@ import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 
 export default function OurWork() {
   const items = [
-    { type: 'image', src: `${prefix}/dc10.jpg`, alt: '10' },
-    { type: 'image', src: `${prefix}/dc11.jpg`, alt: '11' },
-    { type: 'image', src: `${prefix}/dc12.jpg`, alt: '12' },
-    { type: 'image', src: `${prefix}/dc1.jpg`, alt: '1' },
-    { type: 'image', src: `${prefix}/dc2.jpg`, alt: '2' },
-    { type: 'image', src: `${prefix}/dc3.jpg`, alt: '3' },
-    { type: 'image', src: `${prefix}/dc4.jpg`, alt: "4" },
-    { type: 'image', src: `${prefix}/dc5.jpg`, alt: "5" },
-    { type: 'image', src: `${prefix}/dc6.jpg`, alt: "6" },
-    { type: 'image', src: `${prefix}/dc7.jpg`, alt: "7" },
-    { type: 'image', src: `${prefix}/dc8.jpg`, alt: "8" },
-    { type: 'image', src: `${prefix}/dc9.jpg`, alt: "9" },
+    { type: 'image', src: `/dc-spray-foam/dc10.jpg`, alt: '10' },
+    { type: 'image', src: `/dc-spray-foam/dc11.jpg`, alt: '11' },
+    { type: 'image', src: `/dc-spray-foam/dc12.jpg`, alt: '12' },
+    { type: 'image', src: `/dc-spray-foam/dc1.jpg`, alt: '1' },
+    { type: 'image', src: `/dc-spray-foam/dc2.jpg`, alt: '2' },
+    { type: 'image', src: `/dc-spray-foam/dc3.jpg`, alt: '3' },
+    { type: 'image', src: `/dc-spray-foam/dc4.jpg`, alt: "4" },
+    { type: 'image', src: `/dc-spray-foam/dc5.jpg`, alt: "5" },
+    { type: 'image', src: `/dc-spray-foam/dc6.jpg`, alt: "6" },
+    { type: 'image', src: `/dc-spray-foam/dc7.jpg`, alt: "7" },
+    { type: 'image', src: `/dc-spray-foam/dc8.jpg`, alt: "8" },
+    { type: 'image', src: `/dc-spray-foam/dc9.jpg`, alt: "9" },
   ];
 
   const [selectedIndex, setSelectedIndex] = useState(null);
@@ -46,7 +46,7 @@ export default function OurWork() {
 
   return (
     <section className="p-4 md:p-8 max-w-screen-xl mx-auto">
-      <h2 className="text-2xl md:text-4xl font-semibold text-center mb-6">See what we've done</h2>
+      <h2 className="text-2xl md:text-4xl font-semibold text-center mb-6">See what we&apos;ve done</h2>
 
       <div className="columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4">
         {items.map((item, i) => (

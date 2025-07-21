@@ -20,7 +20,7 @@ export default function Home() {
 
       {/* Services / Project Highlights */}
       <section className="text-left max-w-4xl mx-auto space-y-4 text-[#03072b]">
-        <h2 className="text-2xl font-semibold">Looking for insulation? We've got you covered.</h2>
+        <h2 className="text-2xl font-semibold">Looking for insulation? We&apos;ve got you covered.</h2>
         <ul className="list-disc pl-6 text-left">
           <li>Residential attics, basements, and walls</li>
           <li>Commercial and agricultural buildings</li>
